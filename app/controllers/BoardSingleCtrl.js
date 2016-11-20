@@ -13,7 +13,7 @@ app.controller('BoardSingleCtrl', function($scope, $routeParams, BoardsFactory, 
 
   $scope.pinUpdate = (pin)=>{
     let modalInstance = $uibModal.open({
-      templateUrl: '../partials/PinsModal.html',
+      templateUrl: '/pinterest-d15-team-winterest/partials/PinsModal.html',
       controller: 'PinModalCtrl',
       resolve: {
         pin,
@@ -46,7 +46,7 @@ app.controller('BoardSingleCtrl', function($scope, $routeParams, BoardsFactory, 
 
   $scope.open = () => {
      let modalInstance = $uibModal.open({
-      templateUrl: '../partials/PinsModal.html',
+      templateUrl: '/pinterest-d15-team-winterest/partials/PinsModal.html',
       controller: 'PinModalCtrl',
       resolve: {
         pin: {

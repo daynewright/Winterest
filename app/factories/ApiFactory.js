@@ -4,7 +4,7 @@ app.factory("ApiFactory", ($q, $http)=>{
 
   let getQuotes = ()=>{
     return $q((resolve, reject)=>{
-      $http.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes/100')
+      $http.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes/100')
       .success((quotes)=>{
         resolve(quotes);
       })

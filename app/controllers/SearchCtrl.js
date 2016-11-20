@@ -25,7 +25,7 @@ app.controller("SearchCtrl", function($scope, ApiFactory, $uibModal, PinsFactory
   function whichBoard(pin){
     console.log("what is pin?", pin);
      let modalInstance = $uibModal.open({
-      templateUrl: '../partials/ShowBoards.html',
+      templateUrl: '/pinterest-d15-team-winterest/partials/ShowBoards.html',
       controller: 'ShowBoardCtrl',
       resolve: {
         pin

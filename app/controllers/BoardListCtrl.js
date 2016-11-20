@@ -11,7 +11,7 @@ app.controller('BoardListCtrl', function($scope, $uibModal, boards, $location, B
 
   $scope.boardEdit= (board)=>{
     let modalInstance = $uibModal.open({
-      templateUrl: '../partials/ModalView.html',
+      templateUrl: '/pinterest-d15-team-winterest/partials/ModalView.html',
       controller: 'ModalCtrl',
       resolve: {
         board,
@@ -22,7 +22,7 @@ app.controller('BoardListCtrl', function($scope, $uibModal, boards, $location, B
 
   $scope.open = () => {
     let modalInstance = $uibModal.open({
-      templateUrl: '../partials/ModalView.html',
+      templateUrl: '/pinterest-d15-team-winterest/partials/ModalView.html',
       controller: 'ModalCtrl',
       resolve: {
         board: {

@@ -1,41 +1,27 @@
-# Using your mad Angular skillz
+# Winterest (Pinterest clone)
 
-You will be broken into teams and your goals is to reverse engineer the basic functionality of Pinterest and build your own version of it.
+Hosted version here: [Winterest](https://daynewright.github.io/winterest/)
 
-## Priorities
+This is a simple clone of Pinterest using [Angular](https://angularjs.org/) and [Firebase](https://firebase.google.com/). It was built by Dayne Wright, Matt Hamil, Grant Regnier and Delaine Wendling.
 
-1. Firebase structure. Flat, flat, flat.
-2. Authentication.
-3. Create board.
-4. Create pin to go on a board.
+## Technologies
 
-## Firebase structure
+Angular | FireBase | SASS | Grunt | Bower | NPM
 
-<pre>
- App
-  |
-  + users
-  |---+ -K84hddnjx9v
-  |   |--- uid: "github:jruhfiurnvuienciuwdn"
-  |   |--- name: "Abraham Ybrimovitz"
-  |
-  + pins
-  |---+ -K84hfurycvb
-  |   |--- uid: "github:jruhfiurnvuienciuwdn"
-  |   |--- boardid: "-K66hzzzyyyy"
-  |   |--- url: "http://www.imgur.com/9rufrniuvnfu2vnefui"
-  |   |--- title: "Ha ha, stupid gator"
-  |
-  + boards
-  |---+ -K66hzzzyyyy
-  |   |--- uid: "github:jruhfiurnvuienciuwdn"
-  |   |--- title: "Stupid animals"
-</pre>
+## Overview
 
-## Authentication
+The application has user authentication through Firebase.  You are able to login with a Google account or create on with an email and password.
 
-### Relevent Firebase docs
+![Login](/lib/img/login.png)
 
-+ Determine if the user is logged in with [onAuthStateChanged or currentUser](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user)
-+ Perform an action as soon as user logs in or out with the [onAuthStateChanged event listener](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user)
-+ Allow user to use OAuth to log in via a social service with [signInWithPopup()](https://firebase.google.com/docs/auth/web/github-auth#handle_the_sign-in_flow_with_the_firebase_sdk) (GitHub linked, other OAuth providers are listed in the left sidebar).
+You are then able to create boards with a title and description where you will place a collection of pins.  You can search, delete and update boards that you have created.
+
+![CreateBoard](lib/img/createboard.png)
+
+After you add a board you can then create pins for that board.  You need an image link, title and description.  The top four pins are used for the main images on the board view.
+
+![Board](lib/img/boards.png)
+
+Once pins are made you can drag and drop to sort and click edit to change any details you have added.
+
+![Pins](lib/img/pins.png)

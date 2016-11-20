@@ -1,5 +1,3 @@
-lib/bower_components
 lib/node_modules
 .sass-cache
-app/values/FbCreds.js
-css
+**/.DS_Store

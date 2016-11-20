@@ -167,9 +167,25 @@ ul[dnd-list] .dndPlaceholder {
   border-radius: 5px;
   padding: 10px;
   position: absolute;
-  top: 5px;
-  left: 80%;
+  top: 20px;
+  left: 85%;
   cursor: pointer;
+}
+
+.ronSwanson {
+  height: 200px;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px #aaa;
+}
+
+.boardModal {
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px #aaa;
+  margin: 15px 0;
+  padding: 20px;
 }
 // .boardImage {
 //   background-color: #EAEAEA;

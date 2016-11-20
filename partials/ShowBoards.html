@@ -1,0 +1,15 @@
+<div class="modal-header">
+  <h3 class="modal-title">Add this pin to: </h3>
+</div>
+<div class="modal-body">
+  <div ng-repeat="board in boards">
+    <div class="clearfix" ng-if="$index % 3 == 0"></div>
+      <div class="col-xs-4 boardCard" ng-click="addPinToBoard(board)">
+          <!-- <img ng-src="{{board.image}}" /> -->
+            <h3> {{board.title}} </h3>
+            <p> {{board.description}} </p>
+      </div>
+  </div>
+<div class="modal-footer">
+  <button class="btn btn-danger" ng-click="close()">Cancel</button>
+</div>

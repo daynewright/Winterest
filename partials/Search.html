@@ -1,0 +1,11 @@
+<div class="container">
+  <div ng-repeat="quote in quotes">
+    <div class="clearfix" ng-if="$index % 3 == 0"></div>
+      <div class="col-xs-4" ng-mouseenter="options=true" ng-mouseleave="options=false">
+        <!-- <img ng-src="{{board.image}}" /> -->
+          <span ng-show="options" class="glyphicon glyphicon-pushpin pinThis" ng-click="addPin(quote)"> </span>
+          <p> Ron Swanson Quote #{{$index}} </p>
+          <h4> {{quote}} </h4>
+      </div>
+  </div>
+</div>

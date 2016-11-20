@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h3 class="modal-title">{{isEditing ? 'Update a Pin' : 'Create a Pin'}}</h3>
+</div>
+<div class="modal-body">
+  <label for="pinTitle">Title:</label>
+  <input type="text" class="form-control" name="pinTitle" ng-model="pin.title"/>
+
+  <label for="pinDescription">Description:</label>
+  <input type="text" class="form-control" name="pinDescription" ng-model="pin.description"/>
+
+  <label for="pinImgUrl">Image Url:</label>
+  <input type="text" class="form-control" name="pinImgUrl" ng-model="pin.imgUrl"/>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-danger" ng-click="close()">Close</button>
+  <button class="btn btn-success" ng-show="{{!isEditing}}" ng-click="create()">Create</button>
+  <button class="btn btn-success" ng-show="{{isEditing}}" ng-click="update(pin, pin.id)">Update</button>
+</div>
+<img ng-src="{{pin.imgUrl}}" class="img-thumbnail img-responsive">

@@ -1,0 +1,31 @@
+<div class="container">
+<div><h2 class="boardInfo"> {{board.title}} Board</h2></div>
+<div><h4 class="boardDescription">{{board.description}}</h4></div>
+<div ng-click="open()" class="col-md-4 col-xs-6 pinDiv">
+  <span class="glyphicon glyphicon-pushpin plusCreate" aria-hidden="true"></span>
+  <h5 class="createBoard"> Create a Pin </h5>
+</div>
+  <ul dnd-list="pins">
+    <li
+      ng-repeat="pin in pins | filter: searchText"
+      dnd-draggable="pin"
+      dnd-moved="pins.splice($index, 1)"
+      dnd-effect-allowed="move"
+      dnd-selected="selected = pin"
+      ng-class="{'selected' : selected === pin}"
+      class="col-xs-4 pinCard"
+      ng-mouseenter="options=true" ng-mouseleave="options=false"
+    >
+      <span ng-show="options" class="glyphicon glyphicon-remove removePin" ng-click="pinDelete(pin.id)"></span>
+      <img draggable="false" ng-src="{{pin.imgUrl}}" class="img-thumbnail pinImg">
+      <h3> {{pin.title}} </h3>
+      <p> {{pin.description}} </p>
+      <p style="display:none">Index: {{pin.index = pins.indexOf(pin)}}</p>
+      <button class="btn btn-secondary editBtn" ng-click="pinUpdate(pin)">Edit</button>
+    </li>
+
+    <li class="dndPlaceholder col-xs-4 pinCard">
+      <h4><i><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Move you pin here</i></h4>
+    </li>
+  </ul>
+</div>

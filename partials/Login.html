@@ -1,0 +1,23 @@
+<div id="loginBackground">
+  <div class="col-md-4 col-md-offset-4">
+    <div id="loginBox">
+      <section class="auth-form">
+      <h2>Login or Register</h2>
+        <div>
+          Email: <input type="text" autofocus="true" class="form-control" ng-model="account.email">
+        </div>
+        <div>
+          Password: <input type="password" class="form-control" ng-model="account.password">
+        </div>
+        <div class="btn-toolbar">
+          <button type="button" class="btn btn-info" ng-click="loginWithEmailAndPassword()">Login</button>
+          <button type="button" class="btn btn-info" ng-click="registerWithEmailAndPassword()">Register</button>
+        </div>
+      </section>
+
+      <section>
+        <button type="button" class="btn btn-danger" ng-click="loginWithGoogle()">Login with Google</button>
+      </section>
+    </div>
+  </div>
+</div>

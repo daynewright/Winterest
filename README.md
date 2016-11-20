@@ -14,7 +14,7 @@ A quick overview of the user experience with in the application.
 
 ### Login
 
-The application has user authentication through Firebase.  You are able to login with a Google account or create on with an email and password.
+The application has user authentication through Firebase.  You are able to login with a Google account or create one with an email and password.
 
 ![Login](/lib/img/login.png)
 

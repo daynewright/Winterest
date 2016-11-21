@@ -16,22 +16,22 @@ A quick overview of the user experience with in the application.
 
 The application has user authentication through Firebase.  You are able to login with a Google account or create one with an email and password.
 
-![Login](/lib/img/login.png)
+![Login](https://github.com/daynewright/Winterest/blob/gh-pages/lib/img/login.png)
 
 ### Creating Boards
 
 You are then able to create boards with a title and description where you will place a collection of pins.  You can search, delete and update boards that you have created.
 
-![CreateBoard](lib/img/createboard.png)
+![CreateBoard](https://github.com/daynewright/Winterest/blob/gh-pages/img/createboard.png)
 
 ### Board View
 
 After you add a board you can then create pins for that board.  You need an image link, title and description.  The top four pins are used for the main images on the board view.
 
-![Board](lib/img/boards.png)
+![Board](https://github.com/daynewright/Winterest/blob/gh-pages/lib/img/boards.png)
 
 ### Adding & Deleting Pins
 
 Once pins are made you can drag and drop to sort and click edit to change any details on that specific pin.
 
-![Pins](lib/img/pins.png)
+![Pins](https://github.com/daynewright/Winterest/blob/gh-pages/lib/img/pins.png)

@@ -1,6 +1,6 @@
 # Winterest (Pinterest clone)
 
-Hosted version here: [Winterest](https://daynewright.github.io/winterest/)
+Hosted version here: [Winterest](https://daynewright.github.io/Winterest/)
 
 This is a simple clone of Pinterest using [Angular](https://angularjs.org/) and [Firebase](https://firebase.google.com/). It was built by Dayne Wright, Matt Hamil, Grant Regnier and Delaine Wendling.
 

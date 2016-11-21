@@ -22,7 +22,7 @@ The application has user authentication through Firebase.  You are able to login
 
 You are then able to create boards with a title and description where you will place a collection of pins.  You can search, delete and update boards that you have created.
 
-![CreateBoard](https://github.com/daynewright/Winterest/blob/gh-pages/img/createboard.png)
+![CreateBoard](https://github.com/daynewright/Winterest/blob/gh-pages/lib/img/createboard.png)
 
 ### Board View
 

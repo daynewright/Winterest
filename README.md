@@ -8,6 +8,10 @@ This is a simple clone of Pinterest using [Angular](https://angularjs.org/) and 
 
 Angular | FireBase | SASS | Grunt | Bower | NPM
 
+## Video Overview
+
+You can watch a quick 3 minute video presentation of the application [here](https://youtu.be/MmbKFSsuobA).
+
 ## Overview
 
 A quick overview of the user experience with in the application.
